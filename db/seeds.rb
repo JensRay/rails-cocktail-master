@@ -13,11 +13,18 @@ puts "Deleting ingredients..."
 Ingredient.destroy_all
 puts "Ingredients deleted"
 
+puts "Deleting cocktails..."
+Cocktail.destroy_all
+puts "Cocktails deleted"
+
 puts "Creating ingredients"
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingredients = JSON.parse(open(url).read)
 ingredients["drinks"].each do |ingredient|
-  i = Ingrenient.create(name: ingredient["strIngredient1"])
+  i = Ingredient.create(name: ingredient["strIngredient1"])
   puts "created #{i.name}"
 end
-puts "Ingrenients created"
+puts "Ingredients created"
+
+# mojito = Cocktail.create(name: 'Mojito', )
+
