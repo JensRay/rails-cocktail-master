@@ -9,6 +9,7 @@ class CocktailsController < ApplicationController
   end
 
   def new
+    # @dose = Dose.new
     @cocktail = Cocktail.new
   end
 
