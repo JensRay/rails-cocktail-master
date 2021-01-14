@@ -93,10 +93,10 @@ require 'open-uri'
 # sugar = Ingredient.create(name: 'Sugar')
 # puts "created #{sugar.name}"
 
-campari = Ingredient.create(name: 'Campari')
-puts "created #{campari.name}"
+# campari = Ingredient.create(name: 'Campari')
+# puts "created #{campari.name}"
 
-puts "Ingredients created"
+# puts "Ingredients created"
 
 
 

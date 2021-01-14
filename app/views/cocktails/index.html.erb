@@ -1,12 +1,12 @@
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
+    <div class="row">
       <% @cocktails.each do |cocktail| %>
-        <%= link_to cocktail.name, cocktail  %>
+        <div class="card col-12 col-md-6 col-lg-3 ">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to cocktail.name, cocktail %></h5>
+          </div>
+        </div>
       <% end %>
     </div>
-  </div>
 </div>
-
-
-
